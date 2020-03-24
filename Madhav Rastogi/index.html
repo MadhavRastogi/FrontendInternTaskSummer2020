@@ -1,0 +1,66 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Login</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><!-- Responsiveness--> 
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+<img src="inc.png" class="inc" alt="">
+<img src="flo.gif" class="fl" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>LOGIN</h2>
+    <!--Data entered by user gets validated and if it is correctly entered it succesfully logs in -->
+    <form name="myForm" action="success.html" onsubmit="return validateForm()" method="post">
+      <!--Enter the details that are required -->
+      <!--Using the "required" attribute to prevent empty fields -->
+      <input type="text" name="username" placeholder="Username" required>
+      <br/>
+      <br/>
+      <input type="email" name="email" placeholder="E-mail" required>
+       <br/>
+      <br/>
+      <input type="password" name="password" placeholder="Password" id="p" required>
+       <br/>
+      <br/>
+      <input type="password" name="cnfpassword" placeholder="Confirm Password" id="cp" required >
+      <br/>
+      <br/>
+      <input type="text" name="phone" placeholder="Phone Number" id="pn" required>
+      <br/>
+      <br/>
+      <textarea name="message" id="message" cols="35" rows="3" placeholder="Comments"></textarea>
+      <p>Age</p>
+      <input type="radio" id="above" name="age" value="above" checked="true">
+      
+      <label for="above">Above 18</label>
+      <br/>
+      <input type="radio" id="below" name="age" value="below">
+      
+      <label for="below">Below 18</label>
+      <br/>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
